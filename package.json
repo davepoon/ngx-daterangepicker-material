@@ -1,7 +1,7 @@
 {
   "name": "ngx-daterangepicker-material",
   "version": "4.0.1",
-  "description": "Angular 9 and 10 date range picker (with material design theme)",
+  "description": "Angular 9 and 10 date range picker (with material design theme) - forked from fetrarij",
   "keywords": [
     "angular2",
     "angular4",
@@ -21,7 +21,7 @@
     "moment",
     "picker"
   ],
-  "homepage": "https://github.com/fetrarij/ngx-daterangepicker-material",
+  "homepage": "https://github.com/davepoon/ngx-daterangepicker-material",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,10 +36,10 @@
     "gh-pages": "ng build --prod --base-href=\"/ngx-daterangepicker-material/\" && ngh --dir demo/dist",
     "build": "ng-packagr -p package.json"
   },
-  "author": "Fetrarijaona R.",
+  "author": "davepoon",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fetrarij/ngx-daterangepicker-material.git"
+    "url": "https://github.com/davepoon/ngx-daterangepicker-material.git"
   },
   "peerDependencies": {
     "moment": "^2.21.0"
