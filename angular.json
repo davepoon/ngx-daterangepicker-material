@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-daterangepicker-material": {
+    "ngx-daterangepicker-material-a11y": {
       "root": "demo",
       "sourceRoot": "demo/src",
       "projectType": "application",
@@ -28,12 +28,10 @@
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "6kb"
-                }
-              ],
+              "budgets": [{
+                "type": "anyComponentStyle",
+                "maximumWarning": "6kb"
+              }],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -43,30 +41,28 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "demo/src/environments/environment.ts",
-                  "with": "demo/src/environments/environment.prod.ts"
-                }
-              ]
+              "fileReplacements": [{
+                "replace": "demo/src/environments/environment.ts",
+                "with": "demo/src/environments/environment.prod.ts"
+              }]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngx-daterangepicker-material:build"
+            "browserTarget": "ngx-daterangepicker-material-a11y:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngx-daterangepicker-material:build:production"
+              "browserTarget": "ngx-daterangepicker-material-a11y:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-daterangepicker-material:build"
+            "browserTarget": "ngx-daterangepicker-material-a11y:build"
           }
         },
         "test": {
@@ -100,7 +96,7 @@
         }
       }
     },
-    "ngx-daterangepicker-material-e2e": {
+    "ngx-daterangepicker-material-a11y-e2e": {
       "root": "demo/e2e",
       "sourceRoot": "demo/e2e",
       "projectType": "application",
@@ -109,7 +105,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "ngx-daterangepicker-material:serve"
+            "devServerTarget": "ngx-daterangepicker-material-a11y:serve"
           }
         },
         "lint": {
@@ -126,7 +122,7 @@
       }
     }
   },
-  "defaultProject": "ngx-daterangepicker-material",
+  "defaultProject": "ngx-daterangepicker-material-a11y",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "",
