@@ -1,6 +1,6 @@
 {
   "name": "ngx-daterangepicker-material-a11y",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Angular 9 and 10 date range picker (with material design theme) - forked from fetrarij",
   "keywords": [
     "angular2",
